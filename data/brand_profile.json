@@ -1,0 +1,43 @@
+
+{
+  "brand_name": "NovaPay",
+  "rules": [
+    {
+      "id": "RULE-001",
+      "category": "terminology",
+      "description": "Never describe the account as free forever. The approved offer is a 14-day free trial.",
+      "severity": "high",
+      "prohibited_phrases": [
+        "free forever"
+      ],
+      "required_phrases": [],
+      "approved_alternatives": [
+        "Start your 14-day free trial"
+      ]
+    },
+    {
+      "id": "RULE-002",
+      "category": "tone",
+      "description": "Avoid exaggerated promotional language.",
+      "severity": "medium",
+      "prohibited_phrases": [
+        "unbeatable deal"
+      ],
+      "required_phrases": [],
+      "approved_alternatives": [
+        "Explore our available plans"
+      ]
+    }
+  ],
+  "approved_facts": [
+    {
+      "id": "FACT-001",
+      "statement": "NovaPay offers a 14-day free trial.",
+      "keywords": [
+        "free trial"
+      ],
+      "fact_type": "trial_duration",
+      "approved_value": "14 days"
+    }
+  ]
+}
